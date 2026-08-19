@@ -1,0 +1,55 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Secrets ###
+.env
+*.env
+!.env.example
+
+### Python ###
+__pycache__/
+*.pyc
+*.pyo
+venv/
+
+### Large data & scratch outputs ###
+Normal - Semi Luxury/
+fare_sources/
+test_out.txt
+scratch_*
+*.log
+
+### Dev inspection artifacts ###
+inspect_pdfs.py
+pdf_inspection_report.txt

@@ -1,0 +1,706 @@
+# Data Import Report
+
+- **Files Processed**: 49
+- **Files Succeeded**: 31 (Source registration count: 32)
+- **Files Pending OCR/Manual Review**: 18 (`import_status = 'NEEDS_OCR_OR_MANUAL_REVIEW'`)
+- **Total Routes**: 30 (Routable Routes: 29)
+- **Total Patterns**: 60 (Routable Patterns: 58)
+- **Canonical Stops**: 134
+- **Corrupted / Unusable Stops**: 0
+- **Total Trips**: 1558 (Routable Trips: 1558)
+- **Total Stop Times**: 4898
+- **Valid Stop Times**: 4000
+- **Invalid / Quarantined Stop Times**: 898
+- **Operator Types**: PRIVATE, SLTB
+
+## Trusted-Data Summary Table
+| Metric | Database Total | Routable / Trusted | Quarantined / Excluded |
+| :--- | :---: | :---: | :---: |
+| **Routes** | 30 | 29 | 1 |
+| **Route Patterns** | 60 | 58 | 2 |
+| **Trips** | 1,558 | 1,558 | 0 |
+| **Stop Times** | 4,898 | 4,000 | 898 |
+| **Stops** | 134 | 134 | 0 |
+| **Source PDF Files** | 49 | 31 Succeeded | 18 Pending Review |
+
+## Warnings / Errors
+
+## Suspicious Times
+- ND-5543 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මාතෙ) in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NE-7080 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- කෑග(cid:4)ල 9 in 1-1 Kegalle - Colombo (N).pdf
+- NB-1179 in 15-87 Jaffna - Colombo (SL).pdf
+- NC-1487 in 43-857 Kandy - Vauniya (N-SL).pdf
+- 5 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NC-2645 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NF-3392 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NF-2882 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- කGනායක in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 122/210-4 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13247 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 3/497 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- සාමාන(cid:28) in 08 Matale - Colombo (R.N.08) Panal.pdf
+- කෑග(cid:12)ල 02 in 662 Kandy - Kegalle (N).pdf
+- NC-5600 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- කෑග(cid:4)ල 13 in 1-1 Kegalle - Colombo (N).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 14 in 2-3 Ambalangoda - Colombo (N).pdf
+- ෙපාවරාගම
+&ට in 401 Elpitiya - Colombo (R.N.401) N.pdf
+- කෑග(cid:9)ල 23 in 662 Kandy - Kegalle (N).pdf
+- ND-4673 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කතරගම )ග*ව in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NA-9925 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NG-3571 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කෑග(cid:12)ල 13 in 662 Kandy - Kegalle (N).pdf
+- 63-1695 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- කතරගම in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 9 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 62-8683 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- අ@ණෙක-ලපැලැස්ස in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 50:94 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-5716 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-9957 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13498 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කෑග(cid:12)ල 08 in 662 Kandy - Kegalle (N).pdf
+- 122/ 210 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-0676 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 67 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13072 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ND-0001 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ND-2760 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NF-9700 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 12546 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 17 in 2-3 Ambalangoda - Colombo (N).pdf
+- NC-8346 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 12 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NC-2391 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 11 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- සාමාන(cid:28) (ර(cid:29)ෙත(cid:15)ට) in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ND-5543 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-4057 in 15-87 Jaffna - Colombo (SL).pdf
+- නාරාෙහ45?ට ද%වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- 44:78 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-3043 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 3-4 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කෑග(cid:12)ල 23 in 662 Kandy - Kegalle (N).pdf
+- 98/487 in 98-6 Balangoda - Colombo (N).pdf
+- ND-5087 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 34යවැව (03:15) in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 34යවැව in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- කෑග(cid:4)ල 3 in 1-1 Kegalle - Colombo (N).pdf
+- කෑග(cid:12)ල 04 in 662 Kandy - Kegalle (N).pdf
+- ක(cid:20)නායක 06:30 in 5 Kurunegala - Colombo (R.N.05).pdf
+- මාවනැ(cid:12)ල 10 in 662-1 Kandy - Mawanella (N).pdf
+- වලස්*1ල in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-7383 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 85:83 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- C in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 10563 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 2 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NE-0194 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13454 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13037 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NA-9149 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NB-5541 in 43-857 Kandy - Vauniya (N-SL).pdf
+- 96:25 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13017 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- මහරගම ද%වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- කෑග(cid:4)ල 1 in 1-1 Kegalle - Colombo (N).pdf
+- 13489 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- (cid:27)(cid:28)ණැගල ද(cid:25)වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- 11291 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-5642 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ඇ(cid:21)(cid:22)(cid:23)(cid:24)ය SEMI in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 12342 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- කෑග(cid:4)ල 12 in 1-1 Kegalle - Colombo (N).pdf
+- 11860 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 50:94 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මාවනැ(cid:12)ල 03 in 662-1 Kandy - Mawanella (N).pdf
+- අ(cid:30)බල-ෙත:ට in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- (cid:1)ෙ(cid:3)ෙග(cid:5)ඩ 6:45 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 122/210-1 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 18 in 2-3 Ambalangoda - Colombo (N).pdf
+- 13918 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NU:LL in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 98-11 in 98-6 Balangoda - Colombo (N).pdf
+- කෑග(cid:12)ල 20 in 662 Kandy - Kegalle (N).pdf
+- NE-0352 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 3/497 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- වලස්()ල in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 20 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ND-1712 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-3710 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- කෑග(cid:12)ල 18 in 662 Kandy - Kegalle (N).pdf
+- 13509 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 86:53 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 09 in 2-3 Ambalangoda - Colombo (N).pdf
+- NC-4172 in 43-857 Kandy - Vauniya (N-SL).pdf
+- කෑග(cid:4)ල 16 in 1-1 Kegalle - Colombo (N).pdf
+- ND-3587 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- තණම)<ල in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 122/467 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- කෑග(cid:25)ල ද වා in 43-857 Kandy - Vauniya (N-SL).pdf
+- ඇ#$%&ය in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13511 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 16 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 10373 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 14142 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NB-9729 in 15-87 Jaffna - Colombo (SL).pdf
+- 86:53 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ND-1869 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13432 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 13489 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-5047 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13454 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NE-0167 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-0903 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 10802 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-9957 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ෙසවනගල SEMI in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 122/210 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ඇ#$%&ය SEMI in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NA-9148 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 11865 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-3879 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-2499 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ෙද=වල ද%වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- කතරගම - Fග(ව in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 11291 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 9:35
+10:35 in 43-857 Kandy - Vauniya (N-SL).pdf
+- හ(cid:30)බ-ෙත:ට in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-6332 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- කෑග(cid:12)ල 07 in 662 Kandy - Kegalle (N).pdf
+- 122/ 210-2 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 10 in 2-3 Ambalangoda - Colombo (N).pdf
+- NE-0070 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 122/210/211 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 08 in 2-3 Ambalangoda - Colombo (N).pdf
+- 13873 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-6808 in 43-857 Kandy - Vauniya (N-SL).pdf
+- 12882 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ND-3587 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 11451 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13150 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NB-5716 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මාවනැ(cid:12)ල 04 in 662-1 Kandy - Mawanella (N).pdf
+- NA-9271 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- මාවනැ(cid:12)ල 17 in 662-1 Kandy - Mawanella (N).pdf
+- 15 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ක(cid:20)නායක 06:50 in 5 Kurunegala - Colombo (R.N.05).pdf
+- 32 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ද(cid:22)(cid:23)ල in 15-87 Jaffna - Colombo (SL).pdf
+- (cid:1)ෙ(cid:3)ෙග(cid:5)ඩ 6:25 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-3011 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- JL-3003 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 4 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NE-9995 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 13032 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 44:78 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 122/210/168 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 03 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මාවනැ(cid:12)ල 11 in 662-1 Kandy - Mawanella (N).pdf
+- 13892 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ND-3011 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කෑග(cid:4)ල 2 in 1-1 Kegalle - Colombo (N).pdf
+- කෑග(cid:4)ල 15 in 1-1 Kegalle - Colombo (N).pdf
+- (cid:1)(cid:2)ෙද(cid:5)ය (23:15) in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NE-0352 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13393 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 16:35
+ග(cid:12)නෑව ද(cid:18)වා in 5 Kurunegala - Colombo (R.N.05).pdf
+- 10328 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 7 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- කෑග(cid:4)ල 14 in 1-1 Kegalle - Colombo (N).pdf
+- නාවල(cid:21)(cid:22) ය ද(cid:24)වා
+9:25 in 19-2 Gampola - Colombo (N).pdf
+- කෑග(cid:12)ල 19 in 662 Kandy - Kegalle (N).pdf
+- මාවනැ(cid:12)ල 15 in 662-1 Kandy - Mawanella (N).pdf
+- ඌ+ෙබා,ක in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 67:-1 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 10718 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-7447 in 43-857 Kandy - Vauniya (N-SL).pdf
+- 3 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 93:00 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-7263 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-1898 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13951 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 11025 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 12546 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 12676 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-7481 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මාවනැ(cid:12)ල 22 in 662-1 Kandy - Mawanella (N).pdf
+- කෑග(cid:12)ල 03 in 662 Kandy - Kegalle (N).pdf
+- 12545 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මාවනැ(cid:12)ල 06 in 662-1 Kandy - Mawanella (N).pdf
+- කෑග(cid:4)ල 5 in 1-1 Kegalle - Colombo (N).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 13 in 2-3 Ambalangoda - Colombo (N).pdf
+- NC-3931 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NE-5150 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 10 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- (cid:11)(cid:11)ෙ(cid:12)ගම in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 01 in 2-3 Ambalangoda - Colombo (N).pdf
+- 33 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NB-8431 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NF-4588 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ෙක&Aවල ද%වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- කෑග(cid:12)ල 06 in 662 Kandy - Kegalle (N).pdf
+- 11914 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-2881 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NA-9846 in 43-857 Kandy - Vauniya (N-SL).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 07 in 2-3 Ambalangoda - Colombo (N).pdf
+- 8 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 13280 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 12998 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13072 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NB-5047 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 14 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NF-3392 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- නාවල(cid:21)(cid:22) ය ද(cid:24)වා
+9:55 in 19-2 Gampola - Colombo (N).pdf
+- ND-0022 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ක(cid:20)නායක 7:30 in 5 Kurunegala - Colombo (R.N.05).pdf
+- 19 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 27 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- HF-0163 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ව(cid:25)(cid:26)යාව in 15-87 Jaffna - Colombo (SL).pdf
+- 10330 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ක(cid:20)නායක 14:15 in 5 Kurunegala - Colombo (R.N.05).pdf
+- NG-3571 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 12793 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13037 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ම(cid:8)නාරම ද වා in 43-857 Kandy - Vauniya (N-SL).pdf
+- 13509 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13915 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ඇ(cid:21)(cid:22)(cid:23)(cid:24)ය in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 12583 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ම(cid:8)නාරම #ට (14:30) in 43-857 Kandy - Vauniya (N-SL).pdf
+- 96:25 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-3603 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 12367 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- හ(cid:28)බ2ෙත-ට in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-4258 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 3-1/339 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ND-5078 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- :/ෙදBය in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 122 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 97:21 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- කෑග(cid:12)ල 17 in 662 Kandy - Kegalle (N).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 12 in 2-3 Ambalangoda - Colombo (N).pdf
+- 45යවැව in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ර,වාන (ෙප:ව:08:05) in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13023 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 13813 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 96:45 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 11881 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- කෑග(cid:4)ල 6 in 1-1 Kegalle - Colombo (N).pdf
+- 3-1/339 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 12418 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-6661 in 43-857 Kandy - Vauniya (N-SL).pdf
+- මාවනැ(cid:12)ල 08 in 662-1 Kandy - Mawanella (N).pdf
+- උ(cid:30)ගම ද%වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- 6 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 98:66 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 12787 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 10563 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- මාවනැ(cid:12)ල 05 in 662-1 Kandy - Mawanella (N).pdf
+- ?Bය5දල ද%වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- ක3තර ද(cid:8)වා in 57 Anuradhapura - Colombo (N).pdf
+- 29 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ක(cid:20)නායක 04:45 in 5 Kurunegala - Colombo (R.N.05).pdf
+- කෑග(cid:12)ල 09 in 662 Kandy - Kegalle (N).pdf
+- NB-8741 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NB-6294 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NB-5906 in 15-87 Jaffna - Colombo (SL).pdf
+- 17:05
+17:35
+18:05
+18:45
+20:50 in 43-857 Kandy - Vauniya (N-SL).pdf
+- ක(cid:20)නායක 05:30 in 5 Kurunegala - Colombo (R.N.05).pdf
+- 10687 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 04 in 2-3 Ambalangoda - Colombo (N).pdf
+- ක(cid:20)නායක 08:40 in 5 Kurunegala - Colombo (R.N.05).pdf
+- NB-3397 in 43-857 Kandy - Vauniya (N-SL).pdf
+- ඇ(cid:21)(cid:22)(cid:23)(cid:24)ය - ර මලාන in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13032 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ර,වාන (ෙප:ව:10:30) in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ND-2454 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- මහරගම 7:20 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කෑග(cid:12)ල 16 in 662 Kandy - Kegalle (N).pdf
+- 13658 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NE-7080 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-1869 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කෑග(cid:12)ල 15 in 662 Kandy - Kegalle (N).pdf
+- මහරගම ද(cid:17)වා in 98-6 Balangoda - Colombo (N).pdf
+- 10330 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ND-3252 in 43-857 Kandy - Vauniya (N-SL).pdf
+- 12998 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- අල$ව ද(cid:25)වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- 13033 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 21 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- :ෙ/ෙද0ය in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 12418 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 10529 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 12572 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 67 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 11501/
+10336 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-4006 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-2454 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NB-7263 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ක(cid:20)නායක 7:10 in 5 Kurunegala - Colombo (R.N.05).pdf
+- ෙසවනගල SEMI in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ෙග:ඩකෙවල in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-6054 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- කෑග(cid:12)ල 10 in 662 Kandy - Kegalle (N).pdf
+- NC-2712 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- මහරගම in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 122/210-1 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13861 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 10718 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 98:-6 in 98-6 Balangoda - Colombo (N).pdf
+- NE-0167 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 12545 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-6325 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 122/210/211 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- Fග:(ව in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- (cid:21)ෙඛ(cid:23)පෙභ(cid:23)(cid:26) in 08 Matale - Colombo (R.N.08) Panal.pdf
+- මහරගම 12:50 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කෑග(cid:12)ල 11 in 662 Kandy - Kegalle (N).pdf
+- NB-9341 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 122/210-5 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NB-6766 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NB-1817 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- බ&'ල ද%වා in 218-2 Kaduruwella - Mahiyanganaya (R.N.218-2) N.pdf
+- ක(cid:20)නායක 08:05 in 5 Kurunegala - Colombo (R.N.05).pdf
+- 97:21 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මහරගම 1:50 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 55ෙ)ගම 3:30 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ඇ-දාන (5:00) in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- යාපනය in 15-87 Jaffna - Colombo (SL).pdf
+- මාවනැ(cid:12)ල 19 in 662-1 Kandy - Mawanella (N).pdf
+- 122/210-4 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-3931 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 11023 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- (cid:1)ෙ(cid:3)ෙග(cid:5)ඩ 5:15 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 122/467 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-4710 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 10802 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13590 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-0200 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 13730 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 12473 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NB-7058 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NE-0194 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- වරකෙප(cid:11)ල 02 in 1-1 Kegalle - Colombo (N).pdf
+- 9:ෙද;ය in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 11 in 2-3 Ambalangoda - Colombo (N).pdf
+- NC-7481 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ෙක(cid:12)ළඹ in 15-87 Jaffna - Colombo (SL).pdf
+- ගල(cid:15)ටමඩ in 1-1 Kegalle - Colombo (N).pdf
+- තණම1Cල in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මහරගම in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 06 in 2-3 Ambalangoda - Colombo (N).pdf
+- ක(cid:20)නායක 06:00 in 5 Kurunegala - Colombo (R.N.05).pdf
+- 14142 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-2881 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ෙක:ෙල:-න in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- රං:වල in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13017 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-2760 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කතරගම in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-5642 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ND-3603 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ෙක(cid:11)ළඹ 02 in 2-3 Ambalangoda - Colombo (N).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 16 in 2-3 Ambalangoda - Colombo (N).pdf
+- NB-4093 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13873 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මාවනැ(cid:12)ල 02 in 662-1 Kandy - Mawanella (N).pdf
+- ND-8162 in 43-857 Kandy - Vauniya (N-SL).pdf
+- 13033 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-5511 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- (cid:1)(cid:2)ෙ(cid:2)(cid:4)ය
+ද(cid:8)වා in 218-2 Kaduruwella - Mahiyanganaya (R.N.218-2) N.pdf
+- NF-4588 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NE-0070 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13518 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- **ල ද%වා in 218-2 Kaduruwella - Mahiyanganaya (R.N.218-2) N.pdf
+- 14038 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- උන(cid:24))(cid:21)ය &ට in 401 Elpitiya - Colombo (R.N.401) N.pdf
+- 11:45
+12:45
+13:45
+14:45
+15:15
+15:50 in 43-857 Kandy - Vauniya (N-SL).pdf
+- කෑග(cid:4)ල 10 in 1-1 Kegalle - Colombo (N).pdf
+- 3 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- මාවනැ(cid:12)ල 20 in 662-1 Kandy - Mawanella (N).pdf
+- ND-1712 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13498 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NE-0281 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- +!,බැ-ද ද%වා in 218-2 Kaduruwella - Mahiyanganaya (R.N.218-2) N.pdf
+- 13302 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 122 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 10855 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 10328 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- මාවනැ(cid:12)ල 12 in 662-1 Kandy - Mawanella (N).pdf
+- NE-7450 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 99:-4 in 98-6 Balangoda - Colombo (N).pdf
+- ෙක-ෙල-2න in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-3879 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-4258 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මාපලගම &ට
+කහ'ව හරහා in 401 Elpitiya - Colombo (R.N.401) N.pdf
+- NC-4265 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- පා:නම in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 34යවැව (02:15) in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 10855 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- කෑග(cid:12)ල 12 in 662 Kandy - Kegalle (N).pdf
+- 3-4 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ර,වාන (ෙප:ව:04:45) in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- කතරගම - )ග*ව in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NB-8117 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 122/210-2 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-9963 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 25 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 96:46 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ND-4673 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 13730 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-3179 in 15-87 Jaffna - Colombo (SL).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 02 in 2-3 Ambalangoda - Colombo (N).pdf
+- 11451 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- මාවනැ(cid:12)ල 16 in 662-1 Kandy - Mawanella (N).pdf
+- 23 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 11290 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-7384 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- (cid:20) ලංගම in 2-3 Ambalangoda - Colombo (N).pdf
+- 11290 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ෙග-ඩකෙවල in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කෑග(cid:4)ල 11 in 1-1 Kegalle - Colombo (N).pdf
+- (cid:20)(cid:21)ගල &ට in 401 Elpitiya - Colombo (R.N.401) N.pdf
+- NB-6332 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මාවනැ(cid:12)ල 18 in 662-1 Kandy - Mawanella (N).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 03 in 2-3 Ambalangoda - Colombo (N).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 15 in 2-3 Ambalangoda - Colombo (N).pdf
+- 12129 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- කෑග(cid:12)ල 21 in 662 Kandy - Kegalle (N).pdf
+- මාවනැ(cid:12)ල 14 in 662-1 Kandy - Mawanella (N).pdf
+- ඌ,ෙබ-'ක in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- අ(cid:21)රාධ(cid:23)ර ද(cid:25)වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- NF-9700 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ෙම&ර(cid:25)ව ද%වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- වරකෙප(cid:11)ල 01 in 1-1 Kegalle - Colombo (N).pdf
+- NB-4093 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කෑග(cid:4)ල 17 in 1-1 Kegalle - Colombo (N).pdf
+- 13813 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-0903 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-7438 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 12457 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- වරකෙප(cid:11)ල 03 in 1-1 Kegalle - Colombo (N).pdf
+- NU:LL in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- !කවැර"ය ද(cid:25)වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- 17 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NC-4006/
+NB-8058 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 10503 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ක(cid:28)නායක ද(cid:18)වා in 5 Kurunegala - Colombo (R.N.05).pdf
+- 10471 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 3-1 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 10687 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 07:05
+ග(cid:12)නෑව ද(cid:18)වා in 5 Kurunegala - Colombo (R.N.05).pdf
+- මාවනැ(cid:12)ල 07 in 662-1 Kandy - Mawanella (N).pdf
+- අ0ණෙක:ලපැලැස්ස in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ර'වාන in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 122/03 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NB-7886 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 122/210-2 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ර,වාන in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 93:00 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NB-8058 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13590 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-2391 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 24 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 13511 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 11914 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 122/210-5 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ND-3710 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- නාවල(cid:21)(cid:22) ය ද(cid:24)වා
+18:10 in 19-2 Gampola - Colombo (N).pdf
+- ක (cid:28)ෙවල ද(cid:25)වා in 17 Panadura - Kandy (R.N.17) N-SL.pdf
+- 13918 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 67:-1 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NA-9688 in 43-857 Kandy - Vauniya (N-SL).pdf
+- ෙක(cid:11)ළඹ 01 in 2-3 Ambalangoda - Colombo (N).pdf
+- ND-1014 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NA-9146 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 122/210 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- කෑග(cid:4)ල 8 in 1-1 Kegalle - Colombo (N).pdf
+- 3-1 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-7058 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NC-4710 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- අ(cid:14)බල(cid:17)ෙග(cid:11)ඩ 05 in 2-3 Ambalangoda - Colombo (N).pdf
+- මාවනැ(cid:12)ල 21 in 662-1 Kandy - Mawanella (N).pdf
+- 22 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 13181 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- ND-1898 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 11865 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- කෑග(cid:12)ල 01 in 662 Kandy - Kegalle (N).pdf
+- කෑග(cid:4)ල 4 in 1-1 Kegalle - Colombo (N).pdf
+- 98/486-1 in 98-6 Balangoda - Colombo (N).pdf
+- (cid:15)(cid:16)ණෑගල in 15-87 Jaffna - Colombo (SL).pdf
+- 13915 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-5663 in 43-857 Kandy - Vauniya (N-SL).pdf
+- 18 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 11062 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NC-5382 in 43-857 Kandy - Vauniya (N-SL).pdf
+- NC-4265 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 35:80 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NB-0276 in 15-87 Jaffna - Colombo (SL).pdf
+- කෑග(cid:12)ල 22 in 662 Kandy - Kegalle (N).pdf
+- NB-7886 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-5004 in 15-87 Jaffna - Colombo (SL).pdf
+- ෙක(cid:11)ළඹ 03 in 2-3 Ambalangoda - Colombo (N).pdf
+- 26 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- බස්රථ අංකය in 15-87 Jaffna - Colombo (SL).pdf
+- 11860 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-9963 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NE-0281 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- 30 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 12583 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- මාවනැ(cid:12)ල 09 in 662-1 Kandy - Mawanella (N).pdf
+- 13514 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 12676 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- $ග%ව ද,වා in 401 Elpitiya - Colombo (R.N.401) N.pdf
+- කෑග(cid:12)ල 05 in 662 Kandy - Kegalle (N).pdf
+- 28 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- NC-6931 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- වැ(cid:22)ෙගෙප:ල (මහරගම in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NC-2645 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13247 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 13150 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- මාවනැ(cid:12)ල 13 in 662-1 Kandy - Mawanella (N).pdf
+- ND-0022 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ND-1014 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- රංවල (ප)ෙලබැ:ද) in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- කෑග(cid:12)ල 14 in 662 Kandy - Kegalle (N).pdf
+- 31 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- 67:26 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- කෑග(cid:4)ල 31 in 1-1 Kegalle - Colombo (N).pdf
+- පා:නම in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- NB-9341 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ර"සලතැ"න ද%වා in 218-2 Kaduruwella - Mahiyanganaya (R.N.218-2) N.pdf
+- NB-1348 in 43-857 Kandy - Vauniya (N-SL).pdf
+- මාපලගම &ට in 401 Elpitiya - Colombo (R.N.401) N.pdf
+- 122/210/168 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ඇ(cid:21)(cid:22)(cid:23)(cid:24)ය - තණම)<ල in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NE-5150 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- කෑග(cid:4)ල 7 in 1-1 Kegalle - Colombo (N).pdf
+- 11501 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 10336 in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- 03 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- NB-7713 in 43-857 Kandy - Vauniya (N-SL).pdf
+- 12455 in 08 Matale - Colombo (R.N.08) Panal.pdf
+- කෑග(cid:4)ල 30 in 1-1 Kegalle - Colombo (N).pdf
+- 14038 in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+
+## Corrupted Text
+- මහ(cid:25)වර ප ය#තය in 01 Kandy - Colombo Normal Panal.pdf
+- ෙස(cid:12)වාව in 08 Matale - Colombo (R.N.08) Panal.pdf
+- මහ(cid:20)වර in 1-245 Kandy - Negombo (N).pdf
+- (cid:27)(cid:28)ට(cid:29)ව in 19-2 Gampola - Colombo (N).pdf
+- වැ(cid:16)ලවාය in 35-3 Matara - Monaragala (N).pdf
+- මාද(cid:28)ෙ(cid:29) in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- (cid:1)(cid:2)තල in 98-2 Monaragala - Colombo (N).pdf
+- මාග(cid:8) අංකය in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- (cid:9)(cid:10)උ(cid:12)ල in 5 Kurunegala - Colombo (R.N.05).pdf
+- අ(cid:2)පාර in 22-2 Ampara - Kandy (N).pdf
+- බලංෙග(cid:16)ඩ in 98-6 Balangoda - Colombo (N).pdf
+- මාග(cid:8) අංකය in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- මහ(cid:3)වර in 43-857 Kandy - Vauniya (N-SL).pdf
+- ෙක(cid:15)ළඹ in 19-2 Gampola - Colombo (N).pdf
+- ඇ(cid:14)(cid:15)(cid:16)(cid:17)ය in 11-1 Embilipitiya - Matara (N).pdf
+- මහ(cid:12)වර in 22-2 Ampara - Kandy (N).pdf
+- මාවනැ(cid:12)ල in 1-2 Mawanella - Colombo (N).pdf
+- ම(cid:7)යංගනය in 22-2 Ampara - Kandy (N).pdf
+- (cid:14)(cid:15)ණැගල in 5 Kurunegala - Colombo (R.N.05).pdf
+- ක(cid:22)අ(cid:23)ගල in 98-6 Balangoda - Colombo (N).pdf
+- මාග(cid:8)ය in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ඇ(cid:19)(cid:20)(cid:21)ෙය (cid:24) (cid:20)ට(cid:15)(cid:30)ම in 401 Elpitiya - Colombo (R.N.401) N.pdf
+- මඩකල(cid:26)ව හං(cid:30)ය ((cid:31)ල(cid:26)ර) in 218-2 Kaduruwella - Mahiyanganaya (R.N.218-2) N.pdf
+- ෙස(cid:3)වාව/ ධාවන අංකය in 35-3 Matara - Monaragala (N).pdf
+- කෑග(cid:12)ල in 1-2 Mawanella - Colombo (N).pdf
+- ෙක(cid:11)ළඹ in 401 Elpitiya - Colombo (R.N.401) N.pdf
+- ෙක(cid:16)ළඹ in 98-6 Balangoda - Colombo (N).pdf
+- ෙස(cid:26)වාව in 98-6 Balangoda - Colombo (N).pdf
+- (cid:24)(cid:25)(cid:26)ර in 218-2 Kaduruwella - Mahiyanganaya (R.N.218-2) N.pdf
+- ඇව(cid:10)යව(cid:12)ත in 1-245 Kandy - Negombo (N).pdf
+- ෙම(cid:19)ණරාගල in 35-3 Matara - Monaragala (N).pdf
+- (cid:19)(cid:20)ණැගල in 6 Kurunegala - Colombo (R.N.06) N.pdf
+- මාග(cid:8)ය in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- ෙද(cid:16)අ(cid:20)ත ක(cid:22)(cid:23)ය in 218-2 Kaduruwella - Mahiyanganaya (R.N.218-2) N.pdf
+- ව(cid:11)(cid:12)යාව in 43-857 Kandy - Vauniya (N-SL).pdf
+- වැ(cid:17)ලවාය in 35-3 Matara - Monaragala (N).pdf
+- බලප(cid:17) අංකය in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- මහ(cid:25)වර in 01 Kandy - Colombo Normal Panal.pdf
+- ඇ(cid:19)(cid:20)(cid:21)ය in 401 Elpitiya - Colombo (R.N.401) N.pdf
+- ෙස(cid:3)වාව in 1-245 Kandy - Negombo (N).pdf
+- ෙක(cid:11)ළඹ in 5 Kurunegala - Colombo (R.N.05).pdf
+- මාග(cid:8) අංකය in 98-6 Balangoda - Colombo (N).pdf
+- ර(cid:24)න(cid:26)ර in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ක(cid:22) අ(cid:23)ගල in 122 _ 03 Embilipitiya - Colombo (Colombo End).pdf
+- ෙම(cid:7)ණරාගල in 98-2 Monaragala - Colombo (N).pdf
+- මහ(cid:12)වර in 602 Kurunegala - Kandy (N).pdf
+- ර(cid:19)න(cid:21)ර in 98-6 Balangoda - Colombo (N).pdf
+- (cid:1)(cid:2)ට(cid:4)ව in 6 Kurunegala - Colombo (R.N.06) N.pdf
+- ෙක(cid:12)ළඹ in 98-2 Monaragala - Colombo (N).pdf
+- අ(cid:14)(cid:15)ගම in 401 Elpitiya - Colombo (R.N.401) N.pdf
+- කෑග(cid:24)ල in 1-245 Kandy - Negombo (N).pdf
+- ග(cid:26)ෙප(cid:14)ල in 19-2 Gampola - Colombo (N).pdf
+- හැෙද(cid:5)ය in 602 Kurunegala - Kandy (N).pdf
+- බලප(cid:19) අංකය in 08 Matale - Colombo (R.N.08) Panal.pdf
+- (cid:14)(cid:15)ට(cid:17)ව in 1-245 Kandy - Negombo (N).pdf
+- ෙම(cid:12)ණරාගල in 98-2 Monaragala - Colombo (N).pdf
+- ද(cid:24)(cid:25)ල in 43-857 Kandy - Vauniya (N-SL).pdf
+- ම(cid:16)යංගනය in 218-2 Kaduruwella - Mahiyanganaya (R.N.218-2) N.pdf
+- (cid:14)(cid:15)ණැගල in 602 Kurunegala - Kandy (N).pdf
+- ෙක(cid:7)ළඹ in 98-2 Monaragala - Colombo (N).pdf
+- ෙක(cid:16)ළඹ in 6 Kurunegala - Colombo (R.N.06) N.pdf
+- ෙම(cid:10)ණරාගල in 35-3 Matara - Monaragala (N).pdf
+- (cid:1)(cid:2)ව(cid:4)ෙග(cid:7)ඩ in 5 Kurunegala - Colombo (R.N.05).pdf
+- මාද(cid:30)ෙ(cid:31) in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- මැදව(cid:29)(cid:30)ය in 43-857 Kandy - Vauniya (N-SL).pdf
+- (cid:26)(cid:27)(cid:8)තලය in 43-857 Kandy - Vauniya (N-SL).pdf
+- වරකාෙප(cid:11)ල in 6 Kurunegala - Colombo (R.N.06) N.pdf
+- ෙක(cid:17)ළඹ in 1-2 Mawanella - Colombo (N).pdf
+- උඩවලව හං(cid:28)ය in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- බලප(cid:17) අංකය in 122 _ 03 Embilipitiya - Colombo (Embilipitiya End).pdf
+- (cid:6)ග(cid:8)ව in 1-245 Kandy - Negombo (N).pdf
+- ර(cid:11)න(cid:12)රය in 11-1 Embilipitiya - Matara (N).pdf
+
+## Remaining Failed Files
+- 15-7 Vauniya Colombo New Implement 2025.02.25.pdf: No tables found
+- 2 Matara - Colombo N New Imp 2025.12.24.pdf: No tables found
+- 2-1 Galle - Colombo New Imp N 2025.12.24.pdf: No tables found
+- 22-8, 38 Colombo - Ampara, Mahiyanganaya, Bibila.pdf: No tables found
+- 25-1 Embilipitiya - Weheragala (N).pdf: No tables found
+- 26-2 deyandara, Middeniya - Colombo New Imp 2025.12.24.pdf: No tables found
+- 31 Galle - Bandarawela, Ampara (N-SL).pdf: No tables found
+- 32-4 Tangalle - Colombo (N-SL).pdf: No tables found
+- 41-2 Kaduruwela - Kandy (N).pdf: No tables found
+- 42-1-430 Morawaka - Colombo (N).pdf: No tables found
+- 48-1 Batticolo - Colombo (N-SL).pdf: No tables found
+- 482 Mathugama - kalawana (N).pdf: No tables found
+- 57-5 Kurunegala - Anuradhapura (N).pdf: No tables found
+- 60 Deniyaya, Akuressa - Colombo New Imp 2025.12.24.pdf: No tables found
+- 69 Avissawella - Kandy (N-SL).pdf: No tables found
+- 79-1 Nuwaraeliya, Welimada - Colombo (N-SL).pdf: No tables found
+- 86 Batticolo - Jaffna (N).pdf: No tables found
+- 87 Jaffana Other Route (N-SL).pdf: No tables found
+
+## Duplicate Stop Candidates
+- ක(cid:22) අ(cid:23)ගල <-> ක(cid:22)අ(cid:23)ගල
