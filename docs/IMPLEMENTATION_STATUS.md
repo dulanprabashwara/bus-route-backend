@@ -51,14 +51,15 @@
 
 ### 🚀 Launch / Execution Commands
 
-1. **Start Backend API (Spring Boot)**:
-   ```bash
-   cd bus-route-backend
-   ./mvnw spring-boot:run
+1. **Start Backend API (Spring Boot - Windows PowerShell)**:
+   ```powershell
+   cd "d:\Bus route\bus-route-backend"
+   $env:JAVA_HOME="C:\Program Files\Microsoft\jdk-17.0.16.8-hotspot"
+   .\mvnw spring-boot:run
    ```
 
 2. **Start Frontend App (Next.js)**:
-   ```bash
-   cd bus-route-frontend
+   ```powershell
+   cd "d:\Bus route\bus-route-frontend"
    npm run dev
    ```
