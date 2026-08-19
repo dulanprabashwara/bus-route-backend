@@ -169,7 +169,6 @@ public class JourneyPlannerService {
         Set<Long> toPatternIds = toStops.stream().map(rs -> rs.getRoutePattern().getId()).collect(Collectors.toSet());
 
         // Find candidate intermediate stops
-        List<Stop> candidateTransferStops = new ArrayList<>();
         Map<Long, List<RouteStop>> patternToStops = new HashMap<>();
 
         for (Long pId : fromPatternIds) {
@@ -219,6 +218,7 @@ public class JourneyPlannerService {
 
         List<JourneyDto> journeys = new ArrayList<>();
         Time sqlTime = Time.valueOf(reqTime);
+        Set<String> seenFamilyConnections = new HashSet<>();
 
         for (Long tStopId : commonStopIds) {
             StopDto transferStop = stopService.getStopById(tStopId);
@@ -247,6 +247,14 @@ public class JourneyPlannerService {
                     String r2Num = (String) row2[7];
                     String r2Name = (String) row2[8];
                     String s2Type = (String) row2[9];
+
+                    // Dominated pruning: For a given first trip + transfer stop + second route,
+                    // only take the EARLIEST valid connecting second bus!
+                    String familyKey = trip1Id + "-" + tStopId + "-" + route2Id;
+                    if (seenFamilyConnections.contains(familyKey)) {
+                        continue;
+                    }
+                    seenFamilyConnections.add(familyKey);
 
                     long leg1Dur = Duration.between(dep1, arr1).toMinutes();
                     if (leg1Dur < 0) leg1Dur += 1440;
@@ -319,18 +327,18 @@ public class JourneyPlannerService {
                     j.getLegs().add(l2);
 
                     journeys.add(j);
-                    if (journeys.size() >= 10) break;
+                    if (journeys.size() >= 20) break;
                 }
-                if (journeys.size() >= 10) break;
+                if (journeys.size() >= 20) break;
             }
-            if (journeys.size() >= 10) break;
+            if (journeys.size() >= 20) break;
         }
 
         return journeys;
     }
 
     private List<JourneyDto> findTwoTransferJourneys(StopDto fromStop, StopDto toStop, LocalTime reqTime) {
-        // Simple fallback placeholder for 2 transfers if needed
+        // Two-transfer routing not yet implemented in pilot phase
         return List.of();
     }
 
@@ -342,7 +350,11 @@ public class JourneyPlannerService {
                 map.put(key, j);
             }
         }
-        return new ArrayList<>(map.values());
+        List<JourneyDto> result = new ArrayList<>(map.values());
+        if (result.size() > 10) {
+            return result.subList(0, 10);
+        }
+        return result;
     }
 
     private void labelAndRankJourneys(List<JourneyDto> journeys, LocalTime reqTime) {
