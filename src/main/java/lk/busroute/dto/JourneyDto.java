@@ -12,11 +12,15 @@ public class JourneyDto {
     private Long durationMinutes;
     private Integer transferCount;
     private BigDecimal totalFare;
+    private BigDecimal knownFareTotal;
     private String fareStatus; // COMPLETE, PARTIAL, UNAVAILABLE
     private List<String> labels = new ArrayList<>();
     private List<JourneyLegDto> legs = new ArrayList<>();
 
     public JourneyDto() {}
+
+    public BigDecimal getKnownFareTotal() { return knownFareTotal != null ? knownFareTotal : totalFare; }
+    public void setKnownFareTotal(BigDecimal knownFareTotal) { this.knownFareTotal = knownFareTotal; }
 
     public String getJourneyId() { return journeyId; }
     public void setJourneyId(String journeyId) { this.journeyId = journeyId; }

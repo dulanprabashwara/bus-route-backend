@@ -53,3 +53,5 @@ scratch_*
 ### Dev inspection artifacts ###
 inspect_pdfs.py
 pdf_inspection_report.txt
+audit_full_log.txt
+audit_results.json

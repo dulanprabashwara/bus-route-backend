@@ -7,6 +7,8 @@ import lk.busroute.dto.*;
 import lk.busroute.exception.ResourceNotFoundException;
 import lk.busroute.repository.RouteStopRepository;
 import lk.busroute.repository.StopTimeRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,6 +25,8 @@ import java.util.stream.Collectors;
 @Service
 @Transactional(readOnly = true)
 public class JourneyPlannerService {
+
+    private static final Logger log = LoggerFactory.getLogger(JourneyPlannerService.class);
 
     private final StopService stopService;
     private final StopTimeRepository stopTimeRepository;
@@ -218,7 +222,7 @@ public class JourneyPlannerService {
 
         List<JourneyDto> journeys = new ArrayList<>();
         Time sqlTime = Time.valueOf(reqTime);
-        Set<String> seenFamilyConnections = new HashSet<>();
+        Set<String> seenConnectionKeys = new HashSet<>();
 
         for (Long tStopId : commonStopIds) {
             StopDto transferStop = stopService.getStopById(tStopId);
@@ -248,13 +252,11 @@ public class JourneyPlannerService {
                     String r2Name = (String) row2[8];
                     String s2Type = (String) row2[9];
 
-                    // Dominated pruning: For a given first trip + transfer stop + second route,
-                    // only take the EARLIEST valid connecting second bus!
-                    String familyKey = trip1Id + "-" + tStopId + "-" + route2Id;
-                    if (seenFamilyConnections.contains(familyKey)) {
+                    String connKey = dep1 + "-" + route1Id + "-" + tStopId + "-" + route2Id;
+                    if (seenConnectionKeys.contains(connKey)) {
                         continue;
                     }
-                    seenFamilyConnections.add(familyKey);
+                    seenConnectionKeys.add(connKey);
 
                     long leg1Dur = Duration.between(dep1, arr1).toMinutes();
                     if (leg1Dur < 0) leg1Dur += 1440;
@@ -270,17 +272,24 @@ public class JourneyPlannerService {
                     FareResultDto fare1 = fareService.calculateFare(route1Id, pattern1Id, fromStop.getId(), tStopId, s1Type);
                     FareResultDto fare2 = fareService.calculateFare(route2Id, pattern2Id, tStopId, toStop.getId(), s2Type);
 
+                    BigDecimal knownTotal = BigDecimal.ZERO;
+                    boolean has1 = (fare1.getAmount() != null);
+                    boolean has2 = (fare2.getAmount() != null);
+                    if (has1) knownTotal = knownTotal.add(fare1.getAmount());
+                    if (has2) knownTotal = knownTotal.add(fare2.getAmount());
+
                     BigDecimal totalFare = null;
-                    String fareStatus = "UNAVAILABLE";
-                    if (fare1.getAmount() != null && fare2.getAmount() != null) {
-                        totalFare = fare1.getAmount().add(fare2.getAmount());
+                    String fareStatus;
+
+                    if (has1 && has2) {
+                        totalFare = knownTotal;
                         fareStatus = "COMPLETE";
-                    } else if (fare1.getAmount() != null) {
-                        totalFare = fare1.getAmount();
+                    } else if (has1 || has2) {
+                        totalFare = knownTotal;
                         fareStatus = "PARTIAL";
-                    } else if (fare2.getAmount() != null) {
-                        totalFare = fare2.getAmount();
-                        fareStatus = "PARTIAL";
+                    } else {
+                        totalFare = null;
+                        fareStatus = "UNAVAILABLE";
                     }
 
                     JourneyLegDto l1 = new JourneyLegDto();
@@ -322,16 +331,17 @@ public class JourneyPlannerService {
                     j.setDurationMinutes(totalDur);
                     j.setTransferCount(1);
                     j.setTotalFare(totalFare);
+                    j.setKnownFareTotal(totalFare);
                     j.setFareStatus(fareStatus);
                     j.getLegs().add(l1);
                     j.getLegs().add(l2);
 
                     journeys.add(j);
-                    if (journeys.size() >= 20) break;
+                    if (journeys.size() >= 30) break;
                 }
-                if (journeys.size() >= 20) break;
+                if (journeys.size() >= 30) break;
             }
-            if (journeys.size() >= 20) break;
+            if (journeys.size() >= 30) break;
         }
 
         return journeys;
@@ -343,18 +353,96 @@ public class JourneyPlannerService {
     }
 
     private List<JourneyDto> deduplicateJourneys(List<JourneyDto> journeys) {
-        Map<String, JourneyDto> map = new LinkedHashMap<>();
+        if (journeys.isEmpty()) return journeys;
+
+        log.info("=== JOURNEY PRUNING DIAGNOSTICS ===");
+        log.info("candidateCountBeforePruning: {}", journeys.size());
+
+        // Step 1: Connection Pruning for 1-transfer journeys
+        // Group by: leg1DepTime + "-" + leg1RouteId + "-" + transferStopId + "-" + leg2RouteId
+        // Retain only the EARLIEST valid leg 2 connection!
+        Map<String, JourneyDto> connectionGroups = new LinkedHashMap<>();
+        List<JourneyDto> directJourneys = new ArrayList<>();
+
         for (JourneyDto j : journeys) {
-            String key = j.getTransferCount() + "-" + j.getDepartureTime() + "-" + j.getArrivalTime();
-            if (!map.containsKey(key)) {
-                map.put(key, j);
+            if (j.getTransferCount() == 1 && j.getLegs().size() >= 2) {
+                JourneyLegDto l1 = j.getLegs().get(0);
+                JourneyLegDto l2 = j.getLegs().get(1);
+                String groupingKey = l1.getDepartureTime() + "-" + l1.getRouteId() + "-" + l1.getDropOffStop().getId() + "-" + l2.getRouteId();
+                log.info("groupingKey: {}", groupingKey);
+
+                if (!connectionGroups.containsKey(groupingKey)) {
+                    connectionGroups.put(groupingKey, j);
+                } else {
+                    JourneyDto existing = connectionGroups.get(groupingKey);
+                    LocalTime existingLeg2Dep = existing.getLegs().get(1).getDepartureTime();
+                    LocalTime candidateLeg2Dep = l2.getDepartureTime();
+                    if (candidateLeg2Dep.isBefore(existingLeg2Dep)) {
+                        connectionGroups.put(groupingKey, j);
+                    }
+                }
+            } else {
+                directJourneys.add(j);
             }
         }
-        List<JourneyDto> result = new ArrayList<>(map.values());
-        if (result.size() > 10) {
-            return result.subList(0, 10);
+
+        List<JourneyDto> afterConnectionPruning = new ArrayList<>(directJourneys);
+        afterConnectionPruning.addAll(connectionGroups.values());
+
+        // Step 2: Global Dominance Pruning
+        List<JourneyDto> pruned = new ArrayList<>();
+        for (JourneyDto cand : afterConnectionPruning) {
+            boolean isDominated = false;
+            for (JourneyDto other : afterConnectionPruning) {
+                if (cand == other) continue;
+                if (isDominatedBy(cand, other)) {
+                    isDominated = true;
+                    log.info("Journey [{}] (Dep {}, Arr {}, Trans {}) is DOMINATED by [{}] (Dep {}, Arr {}, Trans {})",
+                            cand.getJourneyId(), cand.getDepartureTime(), cand.getArrivalTime(), cand.getTransferCount(),
+                            other.getJourneyId(), other.getDepartureTime(), other.getArrivalTime(), other.getTransferCount());
+                    break;
+                }
+            }
+            if (!isDominated) {
+                pruned.add(cand);
+            }
         }
-        return result;
+
+        log.info("candidateCountAfterPruning: {}", pruned.size());
+        log.info("journeysRemoved: {}", journeys.size() - pruned.size());
+        log.info("journeysRetained: {}", pruned.size());
+
+        if (pruned.size() > 10) {
+            return pruned.subList(0, 10);
+        }
+        return pruned;
+    }
+
+    private boolean isDominatedBy(JourneyDto cand, JourneyDto other) {
+        // 'other' dominates 'cand' if 'other' is strictly superior or equal in all aspects without drawback
+        if (other.getTransferCount() > cand.getTransferCount()) return false;
+
+        // other departs at same time or earlier
+        if (other.getDepartureTime().isAfter(cand.getDepartureTime())) return false;
+
+        // other arrives at same time or earlier
+        if (other.getArrivalTime().isAfter(cand.getArrivalTime())) return false;
+
+        // If departure, arrival, and transfers are equal, compare fare
+        if (other.getDepartureTime().equals(cand.getDepartureTime()) &&
+            other.getArrivalTime().equals(cand.getArrivalTime()) &&
+            other.getTransferCount().equals(cand.getTransferCount())) {
+
+            if (cand.getTotalFare() != null && other.getTotalFare() != null) {
+                if (other.getTotalFare().compareTo(cand.getTotalFare()) > 0) return false;
+            }
+        }
+
+        // Return true if other is strictly better in at least one attribute
+        return (other.getTransferCount() < cand.getTransferCount()) ||
+               (other.getDepartureTime().isBefore(cand.getDepartureTime())) ||
+               (other.getArrivalTime().isBefore(cand.getArrivalTime())) ||
+               (other.getTotalFare() != null && cand.getTotalFare() != null && other.getTotalFare().compareTo(cand.getTotalFare()) < 0);
     }
 
     private void labelAndRankJourneys(List<JourneyDto> journeys, LocalTime reqTime) {
